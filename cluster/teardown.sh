@@ -22,7 +22,8 @@ fn__delete_cluster () {
 }
 
 fn__delete_context () {
-  kubectl config delete-context $KUBECTL_CONFIG_CONTEXT_NAME
+  #not needed? test to see
+  #kubectl config delete-context $KUBECTL_CONFIG_CONTEXT_NAME
 }
 
 run () {
