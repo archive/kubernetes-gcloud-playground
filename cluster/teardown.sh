@@ -15,13 +15,13 @@ if [ -z "$KUBECTL_CONFIG_CONTEXT_NAME" ]; then
   exit 1
 fi  
 
-delete_cluster () {
+fn__delete_cluster () {
   gcloud container clusters delete $GCLOUD_CLUSTER_NAME
 
   gcloud container clusters list
 }
 
-delete_context () {
+fn__delete_context () {
   kubectl config delete-context $KUBECTL_CONFIG_CONTEXT_NAME
 }
 
@@ -31,8 +31,8 @@ run () {
   echo ""
 
   set -x
-  delete_cluster
-  delete_context
+  fn__delete_cluster
+  fn__delete_context
   set +x
 }
 
