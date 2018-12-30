@@ -11,7 +11,7 @@ if [ -z "$GCLOUD_CLUSTER_NAME" ]; then
 fi  
 
 if [ -z "$KUBECTL_CONFIG_CONTEXT_NAME" ]; then
-  echo "Missing value for ENV GCLOUD_CLUSTER_NAME"
+  echo "Missing value for ENV KUBECTL_CONFIG_CONTEXT_NAME"
   exit 1
 fi  
 
