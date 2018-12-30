@@ -1,0 +1,8 @@
+version: "3"
+services:
+  application:
+    build: .
+    ports:
+      - "8090:5010"
+    container_name: nodejs-test-svc-app
+    image: nodejs-test-svc-app-image

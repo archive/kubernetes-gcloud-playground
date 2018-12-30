@@ -1,0 +1,8 @@
+version: "3"
+services:
+  application:
+    build: .
+    ports:
+      - "8080:5000"
+    container_name: dotnetcore-testsvc-app
+    image: dotnetcore-testsvc-app-image
